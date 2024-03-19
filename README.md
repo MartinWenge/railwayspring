@@ -1,2 +1,3 @@
-# railwayspring
-simple reactive webapp with something about railsways
+# Railway Spring
+
+Simple reactive webapp with something about railsways
