@@ -18,3 +18,49 @@ backend/*.iws
 backend/*.iml
 backend/*.ipr
 
+# Compiled output
+frontend/railwayspringapp/dist
+frontend/railwayspringapp/tmp
+frontend/railwayspringapp/out-tsc
+frontend/railwayspringapp/bazel-out
+
+# Node
+frontend/railwayspringapp/node_modules/*
+frontend/railwayspringapp/npm-debug.log
+frontend/railwayspringapp/yarn-error.log
+
+# IDEs and editors
+frontend/railwayspringapp/.idea/
+frontend/railwayspringapp/.project
+frontend/railwayspringapp/.classpath
+frontend/railwayspringapp/.c9/
+frontend/railwayspringapp/*.launch
+frontend/railwayspringapp/.settings/
+frontend/railwayspringapp/*.sublime-workspace
+
+# Visual Studio Code
+frontend/railwayspringapp/.vscode/*
+frontend/railwayspringapp/!.vscode/settings.json
+frontend/railwayspringapp/!.vscode/tasks.json
+frontend/railwayspringapp/!.vscode/launch.json
+frontend/railwayspringapp/!.vscode/extensions.json
+frontend/railwayspringapp/.history/*
+
+# Miscellaneous
+frontend/railwayspringapp/.angular/cache
+frontend/railwayspringapp/.sass-cache/
+frontend/railwayspringapp/connect.lock
+frontend/railwayspringapp/coverage
+frontend/railwayspringapp/libpeerconnection.log
+frontend/railwayspringapp/testem.log
+frontend/railwayspringapp/typings
+
+# Tests
+**.spec.ts
+
+# System files
+frontend/railwayspringapp/.DS_Store
+frontend/railwayspringapp/Thumbs.db
+
+# Custom
+frontend/railwayspringapp/src/favicon.ico_old
