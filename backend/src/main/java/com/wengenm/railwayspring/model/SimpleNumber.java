@@ -11,5 +11,5 @@ import lombok.Setter;
 @AllArgsConstructor
 public class SimpleNumber {
 
-    private Integer counter;
+    private Integer count;
 }
