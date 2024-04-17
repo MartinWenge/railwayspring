@@ -1,4 +1,4 @@
-import { ApplicationConfig } from '@angular/core';
+import { ApplicationConfig, importProvidersFrom } from '@angular/core';
 import { provideRouter } from '@angular/router';
 
 import { routes } from './app.routes';
@@ -7,6 +7,8 @@ import { provideEffects } from '@ngrx/effects';
 import { provideStoreDevtools } from '@ngrx/store-devtools';
 
 import { counterReducer } from './counter.reducer';
+import { HttpClientModule } from '@angular/common/http';
+import { CounterBackendEffects } from './counter.effects';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -17,6 +19,8 @@ export const appConfig: ApplicationConfig = {
       }
     ),
     provideEffects(),
-    provideStoreDevtools({ maxAge: 25})
+    provideStoreDevtools({ maxAge: 25}),
+    importProvidersFrom(HttpClientModule),
+    provideEffects([CounterBackendEffects])
   ]
 };
