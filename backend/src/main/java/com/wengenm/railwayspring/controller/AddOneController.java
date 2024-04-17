@@ -12,7 +12,7 @@ public class AddOneController {
 
     @PostMapping(value = "/addone")
     public ResponseEntity<SimpleNumber> addOne(@RequestBody SimpleNumber counter){
-        SimpleNumber counterPlusOne = new SimpleNumber(counter.getCounter() + 1);
+        SimpleNumber counterPlusOne = new SimpleNumber(counter.getCount() + 1);
         return new ResponseEntity<>(counterPlusOne, HttpStatus.OK);
     }
 
