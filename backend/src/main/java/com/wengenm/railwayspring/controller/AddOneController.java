@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class AddOneController {
 
     @PostMapping(value = "/addone")
-    //@CrossOrigin(origins = "http://localhost:4200")
     public ResponseEntity<SimpleNumber> addOne(@RequestBody SimpleNumber counter){
         SimpleNumber counterPlusOne = new SimpleNumber(counter.getCount() + 1);
         return new ResponseEntity<>(counterPlusOne, HttpStatus.OK);
