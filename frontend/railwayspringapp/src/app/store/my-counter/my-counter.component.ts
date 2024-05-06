@@ -30,4 +30,8 @@ export class MyCounterComponent {
   reset() {
     this.store.dispatch(reset());
   }
+
+  incrementOnBackend() {
+    this.store.dispatch(incrementOnBackend());
+  }
 }
