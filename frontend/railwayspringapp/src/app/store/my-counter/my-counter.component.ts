@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
 import { AsyncPipe } from '@angular/common';
-import { increment, decrement, reset } from '../counter.actions';
+import { increment, decrement, reset } from './counter.actions';
 import { Store } from '@ngrx/store';
 
 @Component({
