@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
 import { AsyncPipe } from '@angular/common';
-import { increment, decrement, reset } from './counter.actions';
+import {MatButtonModule} from '@angular/material/button';
+import { increment, decrement, reset, incrementOnBackend } from './counter.actions';
 import { Store } from '@ngrx/store';
 
 @Component({
   selector: 'app-my-counter',
   standalone: true,
-  imports: [AsyncPipe],
+  imports: [AsyncPipe, MatButtonModule],
   templateUrl: './my-counter.component.html',
   styleUrl: './my-counter.component.css'
 })

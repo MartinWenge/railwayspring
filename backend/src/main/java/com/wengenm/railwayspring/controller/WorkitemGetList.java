@@ -19,15 +19,15 @@ public class WorkitemGetList {
     public ResponseEntity<List<Workitem>>workItemGetList(@RequestParam(name = "list", required = false) String list){
         List<Workitem> listOfWorkitems = new ArrayList<>();
         if(list.equals("all") || list == null){
-            listOfWorkitems.add(new Workitem(1, "workitem 1", "beschreibung 1", "Aktiv"));
-            listOfWorkitems.add(new Workitem(2, "workitem 2", "beschreibung 2", "Aktiv"));
+            listOfWorkitems.add(new Workitem(1, "workitem 1", "beschreibung 1", "active"));
+            listOfWorkitems.add(new Workitem(2, "workitem 2", "beschreibung 2", "active"));
             listOfWorkitems.add(new Workitem(3, "workitem 3", "beschreibung 3", "Done"));
         }else{
             String [] listStringArray = list.split(",");
             List<Integer> listArray = Arrays.stream(listStringArray).map(Integer::parseInt).toList();
 
             for(Integer weId: listArray){
-                listOfWorkitems.add(new Workitem(weId, "workitem " + weId, "beschreibung " + weId, "Aktiv"));
+                listOfWorkitems.add(new Workitem(weId, "workitem " + weId, "beschreibung " + weId, "active"));
             }
         }
 

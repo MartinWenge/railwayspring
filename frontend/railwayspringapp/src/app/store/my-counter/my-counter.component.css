@@ -1,3 +1,13 @@
 .counterbox {
     padding: 10px;
 }
+
+.counter-button-row {
+    display: table-cell;
+    max-width: 680px;
+
+}
+
+.counter-button-row .mat-mdc-button-base{
+    margin: 8px 8px 8px 0;
+}

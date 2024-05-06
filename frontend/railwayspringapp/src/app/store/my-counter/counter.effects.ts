@@ -3,7 +3,7 @@ import { createEffect, ofType, Actions} from "@ngrx/effects";
 import { Observable, map, switchMap, take } from "rxjs";
 import { Store } from "@ngrx/store";
 import { incrementOnBackend, setCounterAction } from "./counter.actions"
-import { MyCounterService, simpleNumber } from "./my-counter/my-counter.service";
+import { MyCounterService, simpleNumber } from "./my-counter.service";
 
 @Injectable()
 export class CounterBackendEffects {
@@ -18,7 +18,7 @@ export class CounterBackendEffects {
                         (result) =>{
                             console.log(result);
                            return setCounterAction({counter: result});
-                        } 
+                        }
                     )
                 )
             })
