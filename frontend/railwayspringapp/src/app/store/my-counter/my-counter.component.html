@@ -1,0 +1,16 @@
+<div class="counterbox">
+    <div>
+        Current Count: {{ count$ | async }}
+    </div>
+
+    <div class="counter-button-row">
+        <button mat-raised-button color="primary" (click)="increment()">Increment</button>
+
+        <button mat-raised-button color="primary" (click)="incrementOnBackend()">Increment counter on backend</button>
+    
+        <button mat-raised-button color="accent" (click)="decrement()">Decrement</button>
+    
+        <button mat-raised-button color="warn" (click)="reset()">Reset counter</button>
+    </div>
+    
+</div>
